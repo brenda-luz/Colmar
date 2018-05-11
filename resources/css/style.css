@@ -1,0 +1,45 @@
+body {
+  background: #DDD;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  height: 64px;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  padding-left: 24px;
+  align-items: center;
+  display: flex;
+}
+
+.brand img {
+  height: 32px;
+}
+
+#name {
+  text-transform: uppercase;
+  font-weight: 100;
+  align-self: center;
+}
+
+#desktop-nav {
+  display: flex;
+  padding-right: 24px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 12px;
+}

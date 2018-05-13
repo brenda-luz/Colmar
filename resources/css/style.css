@@ -9,6 +9,10 @@ strong {
   font-weight: bold;
 }
 
+.flex {
+  display: flex;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -21,7 +25,6 @@ header {
 .brand {
   padding-left: 24px;
   align-items: center;
-  display: flex;
 }
 
 .brand img {
@@ -35,11 +38,47 @@ header {
 }
 
 #desktop-nav {
-  display: flex;
   padding-right: 24px;
 }
 
 nav li {
   display: inline-block;
   padding: 12px;
+}
+
+
+/* BANNER */
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  object-fit: contain;
+  max-height: 35rem;
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.3rem;
+}
+
+.banner-text {
+  flex-flow: column;
+  justify-content: center;
+  padding: 1.3rem;
+  width: 25%;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+.button {
+  width: 100%;
+  background: #666;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 0;
+  cursor: pointer;
 }

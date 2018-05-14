@@ -138,8 +138,12 @@ nav li {
   border-bottom: 3px solid #ddd;
 }
 
-.article img {
+.pic-container {
   width: 35%;
+}
+
+.pic-container img {
+  width: 100%;
 }
 
 .info-content {

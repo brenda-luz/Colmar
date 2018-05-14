@@ -1,6 +1,6 @@
 body {
-  background: #DDD;
-  font-family: Helvetica, sans-serif;
+  background: #fff;
+  font-family: Tahoma, sans-serif;
   font-size: 18px;
   color: #000;
 }
@@ -9,8 +9,29 @@ strong {
   font-weight: bold;
 }
 
+/* layout classes */
+.site-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .flex {
   display: flex;
+}
+
+.left {
+  width: 60%;
+  padding: 2rem 1.3rem;
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  width: 40%;
+  padding: 1.2rem 0;
+  flex-flow: column;
 }
 
 /* HEADER */
@@ -20,6 +41,8 @@ header {
   background: #fff;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .brand {
@@ -50,35 +73,66 @@ nav li {
 /* BANNER */
 .banner {
   width: 100%;
+  background: #ddd;
 }
 
-.banner img {
-  object-fit: contain;
-  max-height: 35rem;
-  width: 60%;
-  height: auto;
-  padding: 2rem 1.3rem;
-}
-
-.banner-text {
+.banner-right {
   flex-flow: column;
   justify-content: center;
   padding: 1.3rem;
-  width: 25%;
+  width: 38%;
 }
 
 .banner h1 {
   font-size: 2.5rem;
-  font-weight: bold;
   margin-bottom: 1.3rem;
+  font-weight: bold;
+  width: 80%;
 }
 
 .button {
-  width: 100%;
+  width: 60%;
   background: #666;
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin: 2rem 0;
   cursor: pointer;
+}
+
+
+/* INFO */
+.info {
+  width: 100%;
+  background: #fff;
+}
+
+.info h1 {
+  font-size: 2rem;
+  padding: 2rem 0 1.3rem 0;
+  font-weight: bold;
+}
+
+.info p {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#border {
+  border-left: 1px solid #ddd;
+}
+
+#middle {
+  border-top: 3px solid #ddd;
+  border-bottom: 3px solid #ddd;
+}
+
+.article {
+  height: 33%;
+  padding: 0.8rem;
 }

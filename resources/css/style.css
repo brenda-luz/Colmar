@@ -177,7 +177,7 @@ nav li {
 
 .courses h1 {
   font-size: 2rem;
-  padding-top: 2rem;
+  padding: 2rem;
   font-weight: bold;
   text-align: center;
 }
@@ -185,7 +185,6 @@ nav li {
 .subjects {
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .box {
@@ -202,4 +201,51 @@ nav li {
   padding: 0.8rem;
   background: #fff;
   height: 7rem;
+}
+
+
+/* exhibit */
+.exhibit {
+  width: 100%;
+  background: #fff;
+}
+
+.exhibit h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.exhibit video {
+  width: 100%;
+}
+
+#thesis {
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.thesis-box {
+  height: 33%;
+  padding: 0.8rem;
+  width: 94%;
+}
+
+#grey {
+  background: #eee;
+}
+
+
+/* footer */
+footer {
+  border-top: 2px solid #ddd;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+#foot {
+  justify-content: space-between;
+  padding: 1.5rem;
 }

@@ -127,12 +127,25 @@ nav li {
   border-left: 1px solid #ddd;
 }
 
+.article {
+  height: 33%;
+  padding: 0.8rem;
+  width: 100%;
+}
+
 #middle {
   border-top: 3px solid #ddd;
   border-bottom: 3px solid #ddd;
 }
 
-.article {
-  height: 33%;
-  padding: 0.8rem;
+.article img {
+  width: 35%;
+}
+
+.info-content {
+  width: 60%;
+  flex-flow: column;
+  justify-content: center;
+  padding-left: 1rem;
+
 }

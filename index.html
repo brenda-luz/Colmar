@@ -12,23 +12,27 @@
 
     <!-- HEADER -->
     <header>
-      <div class="flex brand">
-        <img src="./resources/img/ic-logo.svg" alt="Colmar Academy"> <span id="name"><strong>Colmar</strong>Academy</span>
-      </div>
+      <div id="desktop-nav">
+        <div class="flex brand">
+          <img src="./resources/img/ic-logo.svg" alt="Colmar Academy"> <span id="name"><strong>Colmar</strong>Academy</span>
+        </div>
 
-      <nav>
-        <div id="desktop-nav" class="flex">
+        <nav>
           <ul>
             <li>On Campus</li>
             <li>Online</li>
             <li>For companies</li>
             <li>Sign in</li>
           </ul>
-        </div>
+        </nav>
+      </div>
 
         <div id="mobile-nav">
+          <img src="./resources/img/ic-logo.svg" alt="Colmar Academy">
+          <img src="./resources/img/ic-on-campus.svg" alt="On Campus" />
+          <img src="./resources/img/ic-online.svg" alt="Online" />
+          <img src="./resources/img/ic-login.svg" alt="Sign In" />
         </div>
-      </nav>
     </header>
 
     <!-- BANNER -->
@@ -59,6 +63,7 @@
           <div class="flex article">
             <div class="pic-container">
              <img class="desktop" src="./resources/img/information-orientation.jpg" alt="Students on campus">
+             <img class="mobile" src="./resources/img/information-orientation-mobile.jpg" alt="Students on campus">
            </div>
             <div class="flex info-content">
               <h3>Orientation date</h3>
@@ -70,6 +75,7 @@
           <div class="flex article" id="middle">
             <div class="pic-container">
               <img class="desktop" src="./resources/img/information-campus.jpg" alt="Campus classroom">
+               <img class="mobile" src="./resources/img/information-campus-mobile.jpg" alt="Campus classroom">
             </div>
             <div class="flex info-content">
               <h3>Our campus</h3>
@@ -81,6 +87,7 @@
           <div class="flex article" id="bottom">
             <div class="pic-container">
               <img class="desktop" src="./resources/img/information-guest-lecture.jpg" alt="Oliver Sack">
+              <img class="mobile" src="./resources/img/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
             </div>
             <div class="flex info-content">
               <h3>Our guest lecture</h3>
@@ -97,7 +104,7 @@
       <div class="site-container">
 
         <h1>Start learning</h1>
-        <div class="flex subjects">
+        <div class="flex subjects" id="desktop-courses">
           <div class="box">
             <img src="./resources/img/course-software.jpg" alt="">
             <div class="course-text">
@@ -153,6 +160,18 @@
           </div>
 
         </div>
+
+        <!-- MOBILE COURSES -->
+        <div id="mobile-courses">
+          <div class="subject">Software engineering</div>
+          <div class="subject">Computer art</div>
+          <div class="subject">Design</div>
+          <div class="subject">Data</div>
+          <div class="subject">Business</div>
+          <div class="subject">Marketing</div>
+        </div>
+
+
       </div>
     </div>
 
@@ -201,7 +220,7 @@
     <footer>
       <div class="flex site-container" id="foot">
         <span>&copy; 2018 Colmar Academy. All rights reserved.</span>
-        <div><span>Terms</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Privacy</span>
+        <div id="desk-footer"><span>Terms</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Privacy</span>
       </div>
     </footer>
 

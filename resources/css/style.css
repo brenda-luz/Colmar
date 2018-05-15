@@ -21,6 +21,7 @@ strong {
 
 .left {
   width: 60%;
+  min-width: 30rem;
   padding: 2rem 1.3rem;
 }
 
@@ -37,11 +38,7 @@ strong {
 
 /* HEADER */
 header {
-  display: flex;
-  height: 64px;
   background: #fff;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -51,7 +48,7 @@ header {
   align-items: center;
 }
 
-.brand img {
+header img {
   height: 32px;
 }
 
@@ -62,7 +59,11 @@ header {
 }
 
 #desktop-nav {
+  height: 3.55rem;
   padding-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav li {
@@ -70,6 +71,9 @@ nav li {
   padding: 12px;
 }
 
+#mobile-nav {
+  display: none;
+}
 
 /* BANNER */
 .banner {
@@ -144,7 +148,7 @@ nav li {
   border-bottom: 3px solid #ddd;
 }
 
-#bottom {
+.article:hover {
   background: #ddd;
 }
 
@@ -154,6 +158,10 @@ nav li {
 
 .pic-container img {
   width: 100%;
+}
+
+.mobile {
+  display: none;
 }
 
 .info-content {
@@ -203,6 +211,10 @@ nav li {
   height: 7rem;
 }
 
+#mobile-courses {
+  display: none;
+}
+
 
 /* exhibit */
 .exhibit {
@@ -248,4 +260,57 @@ footer {
 #foot {
   justify-content: space-between;
   padding: 1.5rem;
+}
+
+/* mobile */
+@media only screen and (max-width:800px) {
+  .exhibit h3, .exhibit p, #thesis, #desktop-courses, .desktop, #desktop-nav, #name, .info .left, #desk-footer {
+    display: none;
+  }
+  header {
+    justify-content: space-around;
+  }
+  #mobile-nav {
+    height: 3.55rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .banner .flex {
+    flex-flow: column wrap;
+  }
+  .banner .left {
+    width: 100%;
+    padding: 0;
+  }
+  .banner-right {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .info .right, .pic-container, .exhibit .left {
+    width: 100%;
+  }
+  .info .flex .article {
+    flex-direction: column;
+  }
+  .mobile {
+    display: block;
+    padding: 0.5rem;
+  }
+  #mobile-courses {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .subject {
+    background: #a6a6a6;
+    padding: 0.8rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    width: 92%;
+  }
 }

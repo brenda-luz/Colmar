@@ -267,6 +267,9 @@ footer {
   .exhibit h3, .exhibit p, #thesis, #desktop-courses, .desktop, #desktop-nav, #name, .info .left, #desk-footer {
     display: none;
   }
+  .site-container {
+    width: 100%;
+  }
   header {
     justify-content: space-around;
   }
